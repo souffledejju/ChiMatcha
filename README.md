@@ -59,11 +59,11 @@ Collaboratively built by:
   * Role: *Core Mobile Developer*
   * Contributions: System flow architecture, authentication logic implementation, cart state management, and core ordering pipeline.
 
-* **[Nama Teman 1]**
+* **Cindy Soputri**
   * Role: *Mobile Developer / Asset & UI Support*
   * Contributions: Feature module implementation, asset integration, and component styling.
 
-* **[Nama Teman 2]**
+* **Berta Christina**
   * Role: *Mobile Developer / QA & Testing*
   * Contributions: Edge-case validation, unit testing, menu data structuring, and debugging.
 
