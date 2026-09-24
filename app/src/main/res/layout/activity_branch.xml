@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_branch_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <RelativeLayout
+        android:id="@+id/layout_header_branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="16dp">
+
+        <ImageButton
+            android:id="@+id/btn_menu_hamburger_branch"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_menu_hamburger"
+            app:tint="@color/off_white"
+            android:padding="12dp"
+            android:scaleType="fitCenter"/>
+
+        <LinearLayout
+            android:id="@+id/layout_header_texts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/btn_menu_hamburger_branch"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BRANCHES"
+                android:textColor="@color/gold_matcha"
+                android:textSize="14sp"
+                android:letterSpacing="0.2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find a tearoom"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:fontFamily="serif"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Each location is a quiet retreat designed for slow afternoons and meaningful conversations."
+                android:textColor="@color/subtitle_grey"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.2"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gold_matcha"
+            android:layout_below="@id/layout_header_texts"
+            android:layout_marginTop="20dp"
+            android:alpha="0.4"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_header_branch"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="24dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#131711"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chi Matcha — PIK"
+                            android:textColor="@color/off_white"
+                            android:textSize="16sp"
+                            android:fontFamily="serif"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="OPEN"
+                            android:textColor="@color/gold_matcha"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:background="@drawable/badge_open_outline"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="4dp"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/gold_matcha"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="16dp"
+                        android:alpha="0.6"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jl. Pantai Indah Kapuk, PIK 1, Jakarta Utara"
+                        android:textColor="@color/subtitle_grey"
+                        android:textSize="12sp"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        app:drawableStartCompat="@drawable/ic_location"
+                        app:drawableTint="@color/gold_matcha"/> <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="09.00 - 22.00"
+                    android:textColor="@color/subtitle_grey"
+                    android:textSize="12sp"
+                    android:layout_marginTop="12dp"
+                    android:drawablePadding="12dp"
+                    android:gravity="center_vertical"
+                    app:drawableStartCompat="@drawable/ic_clock"
+                    app:drawableTint="@color/gold_matcha"/> </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#131711"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chi Matcha — Senopati"
+                            android:textColor="@color/off_white"
+                            android:textSize="16sp"
+                            android:fontFamily="serif"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="OPEN"
+                            android:textColor="@color/gold_matcha"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:background="@drawable/badge_open_outline"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="4dp"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/gold_matcha"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="16dp"
+                        android:alpha="0.6"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jl. Senopati No. 88, Jakarta Selatan"
+                        android:textColor="@color/subtitle_grey"
+                        android:textSize="12sp"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        app:drawableStartCompat="@drawable/ic_location"
+                        app:drawableTint="@color/gold_matcha"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="09.00 - 22.00"
+                        android:textColor="@color/subtitle_grey"
+                        android:textSize="12sp"
+                        android:layout_marginTop="12dp"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        app:drawableStartCompat="@drawable/ic_clock"
+                        app:drawableTint="@color/gold_matcha"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#131711"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chi Matcha — Kemang"
+                            android:textColor="@color/off_white"
+                            android:textSize="16sp"
+                            android:fontFamily="serif"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="OPEN"
+                            android:textColor="@color/gold_matcha"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:background="@drawable/badge_open_outline"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="4dp"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/gold_matcha"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="16dp"
+                        android:alpha="0.6"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jl. Kemang Raya No. 21, Jakarta Selatan"
+                        android:textColor="@color/subtitle_grey"
+                        android:textSize="12sp"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        app:drawableStartCompat="@drawable/ic_location"
+                        app:drawableTint="@color/gold_matcha"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="09.00 - 22.00"
+                        android:textColor="@color/subtitle_grey"
+                        android:textSize="12sp"
+                        android:layout_marginTop="12dp"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        app:drawableStartCompat="@drawable/ic_clock"
+                        app:drawableTint="@color/gold_matcha"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_dropdown_menu_branch"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/menu_dropdown_bg"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/menu_home_from_branch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="@color/off_white"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/menu_items_from_branch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Items"
+            android:textColor="@color/off_white"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gold_matcha"
+            android:layout_marginVertical="8dp"/>
+
+        <TextView
+            android:id="@+id/menu_logout_from_branch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textColor="#E57373"
+            android:padding="12dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

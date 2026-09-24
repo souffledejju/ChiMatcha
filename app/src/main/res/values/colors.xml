@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_green_bg">#1B2418</color>
+    <color name="gold_matcha">#D4B275</color>
+    <color name="subtitle_grey">#80D9D9D9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="button_green">#819B4B</color>
+    <color name="off_white">#F2EDE3</color>
+    <color name="center_glow">#3A4D34</color>
+</resources>

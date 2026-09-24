@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EST . 2025"
+            android:textColor="@color/gold_matcha"
+            android:textSize="12sp"
+            android:letterSpacing="0.2"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi "
+                android:textColor="@color/off_white"
+                android:textSize="32sp"
+                android:fontFamily="serif" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matcha"
+                android:textColor="@color/gold_matcha"
+                android:textSize="32sp"
+                android:fontFamily="serif" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Begin your account"
+            android:textColor="@color/subtitle_grey"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_matcha" /> <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="USERNAME"
+        android:textColor="@color/subtitle_grey"
+        android:textSize="12sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp" />
+        <EditText
+            android:id="@+id/et_reg_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Choose a username (min. 7 chars)"
+            android:textColorHint="@color/subtitle_grey"
+            android:textColor="@color/white"
+            android:background="@drawable/edittext_rounded"
+            android:paddingStart="20dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD"
+            android:textColor="@color/subtitle_grey"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp" />
+        <EditText
+            android:id="@+id/et_reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Create a password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/subtitle_grey"
+            android:textColor="@color/white"
+            android:background="@drawable/edittext_rounded"
+            android:paddingStart="20dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM PASSWORD"
+            android:textColor="@color/subtitle_grey"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp" />
+        <EditText
+            android:id="@+id/et_reg_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Re-enter password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/subtitle_grey"
+            android:textColor="@color/white"
+            android:background="@drawable/edittext_rounded"
+            android:paddingStart="20dp"
+            android:textSize="14sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Create Account"
+            android:textColor="@color/dark_green_bg"
+            android:background="@drawable/button_rounded"
+            android:layout_marginTop="35dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold" /> <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already a member? "
+            android:textColor="@color/off_white"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_login_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:textColor="@color/gold_matcha"
+            android:textSize="14sp"
+            android:textStyle="bold" /> </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
